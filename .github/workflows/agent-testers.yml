@@ -104,7 +104,7 @@ jobs:
           path: src
           persist-credentials: false
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 22 }
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: "17" }
       - uses: gradle/actions/setup-gradle@v4   # Gradle cache between runs
@@ -150,7 +150,7 @@ jobs:
           path: src
           persist-credentials: false
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 22 }
       - uses: actions/setup-java@v4   # Kotlin Multiplatform builds call Gradle from Xcode
         with: { distribution: temurin, java-version: "17" }
       - name: Latest Xcode
@@ -230,6 +230,10 @@ jobs:
           BUG_REPORT: ${{ inputs.bug_report }}
           GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN || github.token }}
         run: bash scripts/bug_report.sh
+
+      - name: Test login for the brief (STEDDY_TEST_LOGIN secret, never committed)
+        env: { STEDDY_TEST_LOGIN: "${{ secrets.STEDDY_TEST_LOGIN }}" }
+        run: if [ -n "$STEDDY_TEST_LOGIN" ]; then echo "$STEDDY_TEST_LOGIN" > steddy/login.md; fi
 
       - name: Emulator + agent
         uses: reactivecircus/android-emulator-runner@v2
@@ -336,6 +340,10 @@ jobs:
           BUG_REPORT: ${{ inputs.bug_report }}
           GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN || github.token }}
         run: bash scripts/bug_report.sh
+
+      - name: Test login for the brief (STEDDY_TEST_LOGIN secret, never committed)
+        env: { STEDDY_TEST_LOGIN: "${{ secrets.STEDDY_TEST_LOGIN }}" }
+        run: if [ -n "$STEDDY_TEST_LOGIN" ]; then echo "$STEDDY_TEST_LOGIN" > steddy/login.md; fi
 
       - name: Agent
         env:

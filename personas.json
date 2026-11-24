@@ -178,5 +178,41 @@
     "locale": "zh-CN",
     "geo": [31.2304, 121.4737],
     "device": {"simulator": "iPhone 16e", "ios": 18, "text_size": "extra-large", "theme": "light"}
+    },
+  {
+    "id": "tom",
+    "platform": "android",
+    "profile": "Garage-door technician, 58, Sydney, 20 years on the tools, reading glasses, big text, wants as few taps as possible between jobs.",
+    "goal": "Get through today's job from accept to paid without ringing the office.",
+    "locale": "en-AU",
+    "geo": [-33.8688, 151.2093],
+    "device": {"name": "Small phone, Android 11", "profile": "Nexus 5", "android_api": 30, "font_scale": 1.3, "theme": "light"}
+  },
+  {
+    "id": "priya",
+    "platform": "android",
+    "profile": "Lead technician, 34, Sydney, quick with phones, quotes most jobs on the spot, checks GST and totals before showing the customer.",
+    "goal": "Quote the job, take a deposit, then finish it and settle the balance.",
+    "locale": "en-AU",
+    "geo": [-33.7969, 151.2840],
+    "device": {"name": "Pixel 7, Android 14", "profile": "pixel_7", "android_api": 34, "font_scale": 1.0, "theme": "dark"}
+  },
+  {
+    "id": "jake",
+    "platform": "ios",
+    "profile": "Apprentice technician, 22, Sydney, buys small parts at the hardware store on the way and needs to be paid back for them, refuses location access.",
+    "goal": "Record a part he paid for himself correctly and finish the job.",
+    "locale": "en-AU",
+    "geo": [-33.9173, 151.2313],
+    "device": {"simulator": "iPhone SE (3rd generation)", "ios": 18, "text_size": "large", "theme": "light"}
+  },
+  {
+    "id": "mia",
+    "platform": "ios",
+    "profile": "Technician, 41, Sydney, low vision, uses the largest accessibility text size and dark mode, plans her week the night before.",
+    "goal": "Read her schedule and job details for the week without changing anything.",
+    "locale": "en-AU",
+    "geo": [-33.8150, 151.0011],
+    "device": {"simulator": "iPhone 16 Pro Max", "ios": 18, "text_size": "accessibility-extra-large", "theme": "dark"}
   }
 ]
