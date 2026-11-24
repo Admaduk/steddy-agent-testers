@@ -1,9 +1,9 @@
 # mobile-agent-testers
 
-> **What I'm building now:** [Explore-Compile-Replay](https://github.com/pierridotite/explore-compile-replay). Agents here never take the same path twice. ECR keeps the path that found a bug as a Maestro flow that reruns for free. Early draft, built in the open.
-
-<a href="https://www.producthunt.com/posts/mobile-agent-testers?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=mobile-agent-testers"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1326513&amp;theme=dark"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1326513&amp;theme=light" alt="Mobile Agent Testers on Product Hunt" width="250" height="54"></picture></a>
+<a href="https://github.com/pierridotite/explore-compile-replay"><img src="assets/ecr-now-building.svg" alt="Now building: Explore-Compile-Replay" width="340" height="54"></a>
 <a href="https://www.linkedin.com/in/pierre-raffalli/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/linkedin-follow-dark.svg"><img src="assets/linkedin-follow-light.svg" alt="Follow Pierre Raffalli on LinkedIn" width="160" height="54"></picture></a>
+
+<sub>Agents here never take the same path twice. <a href="https://github.com/pierridotite/explore-compile-replay">Explore-Compile-Replay</a> keeps the path that found a bug as a test that reruns for free.</sub>
 
 **20 AI testers on 20 different phones, in parallel, on GitHub's free runners.**
 
