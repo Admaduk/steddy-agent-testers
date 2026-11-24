@@ -11,9 +11,13 @@ CI=1 npx expo prebuild --platform android --no-install
 cd android
 # The prebuild default (-Xmx2048m, 512m Metaspace) ran out of Metaspace in lint and hung
 # until the 60 min job limit (run 45408975192). Hosted Linux runners have 16 GB.
+# (run 45421533956: the appended line was ignored and Gradle used its 512 MiB default,
+# so start on a fresh line and also pass it on the command line below)
+JVMARGS='-Xmx6g -XX:MaxMetaspaceSize=2g -Dfile.encoding=UTF-8'
 sed -i '/^org.gradle.jvmargs=/d' gradle.properties
-echo 'org.gradle.jvmargs=-Xmx6g -XX:MaxMetaspaceSize=2g -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8' >> gradle.properties
+printf '\norg.gradle.jvmargs=%s\n' "$JVMARGS" >> gradle.properties
 # Release lint is a store check, not needed for a test build, and was where memory ran out.
 APP_GRADLE=app/build.gradle; [ -f app/build.gradle.kts ] && APP_GRADLE=app/build.gradle.kts
 printf '\nandroid { lint { checkReleaseBuilds = false } }\n' >> "$APP_GRADLE"  # same syntax in Groovy and Kotlin DSL
-./gradlew assembleRelease -PreactNativeArchitectures=x86_64 --build-cache
+grep -n '^org.gradle.jvmargs=' gradle.properties
+./gradlew assembleRelease -PreactNativeArchitectures=x86_64 --build-cache "-Dorg.gradle.jvmargs=$JVMARGS"
