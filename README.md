@@ -1,9 +1,9 @@
 # mobile-agent-testers
 
-<a href="https://github.com/pierridotite/explore-compile-replay"><img src="assets/ecr-now-building.svg" alt="Now building: Explore-Compile-Replay" width="340" height="54"></a>
+<a href="https://github.com/pierridotite/explore-compile-replay"><img src="assets/ecr-now-building.svg" alt="Next: every bug becomes a free test. Explore-Compile-Replay" width="340" height="54"></a>
 <a href="https://www.linkedin.com/in/pierre-raffalli/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/linkedin-follow-dark.svg"><img src="assets/linkedin-follow-light.svg" alt="Follow Pierre Raffalli on LinkedIn" width="160" height="54"></picture></a>
 
-<sub>Agents here never take the same path twice. <a href="https://github.com/pierridotite/explore-compile-replay">Explore-Compile-Replay</a> keeps the path that found a bug as a test that reruns for free.</sub>
+<sub>What I'm building next: when an agent finds a bug, <a href="https://github.com/pierridotite/explore-compile-replay">Explore-Compile-Replay</a> turns its path into a test that reruns on every PR, with no model. Early draft.</sub>
 
 **20 AI testers on 20 different phones, in parallel, on GitHub's free runners.**
 
