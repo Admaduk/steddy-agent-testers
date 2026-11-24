@@ -3,8 +3,6 @@
 <a href="https://www.producthunt.com/posts/mobile-agent-testers?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=mobile-agent-testers"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1326513&amp;theme=dark"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1326513&amp;theme=light" alt="Mobile Agent Testers on Product Hunt" width="250" height="54"></picture></a>
 <a href="https://www.linkedin.com/in/pierre-raffalli/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/linkedin-follow-dark.svg"><img src="assets/linkedin-follow-light.svg" alt="Follow Pierre Raffalli on LinkedIn" width="160" height="54"></picture></a>
 
-**Hoy se lanza en [Product Hunt](https://www.producthunt.com/posts/mobile-agent-testers?utm_source=github&utm_medium=readme&utm_campaign=launch-day).** Si te ahorra tiempo, tus comentarios y tu apoyo en la página del lanzamiento ayudan mucho.
-
 **20 testers con IA en 20 teléfonos distintos, en paralelo, en los runners gratuitos de GitHub.**
 
 **[Ejemplos](docs/examples.es.md)** · **[Comparativa](docs/compare.md)** · **[Preguntas frecuentes](docs/faq.es.md)** · **[Personas](personas.json)** · **[Contribuir](CONTRIBUTING.md)** · **[Versiones](https://github.com/pierridotite/mobile-agent-testers/releases)**
